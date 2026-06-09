@@ -1,0 +1,19 @@
+graph TD
+    A[PCIe-NVMe 自动化测试框架] --> B[测试类型]
+    B --> B1[PCIe 枚举]
+    B --> B2[NVMe 控制器识别]
+    B --> B3[FIO 性能测试]
+
+    A --> C[执行环境]
+    C --> C1[GitHub Runner<br/>无硬件自动跳过]
+    C --> C2[Lab Runner<br/>真实芯片测试]
+
+    A --> D[测试产出]
+    D --> D1[pytest 报告]
+    D --> D2[HTML 可视化]
+    D --> D3[CI 状态徽章]
+
+    style A fill:#f9f,stroke:#333
+    style B fill:#bbf,stroke:#333
+    style C fill:#bfb,stroke:#333
+    style D fill:#fbb,stroke:#333
