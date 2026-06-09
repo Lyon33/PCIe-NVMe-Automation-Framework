@@ -1,7 +1,7 @@
 import subprocess
 import pytest
 
-def has_lspci:
+def has_lspci():
     return subprocess.run("which lspci", shell=True).returncode ==0
 
 @pytest.mark.skipif(not has_lspci(), reason="No lspci")
