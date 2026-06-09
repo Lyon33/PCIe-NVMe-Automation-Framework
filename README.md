@@ -20,19 +20,19 @@
 
 \`\`\`mermaid
 graph TD
-A[PCIe-NVMe 自动化测试框架] --> B[测试类型]
-B --> B1[PCIe 枚举与链路信息]
-B --> B2[NVMe 控制器识别]
-B --> B3[FIO 性能基准测试]
+    A[PCIe-NVMe 自动化测试框架] --> B[测试类型]
+    B --> B1[PCIe 枚举与链路信息]
+    B --> B2[NVMe 控制器识别]
+    B --> B3[FIO 性能基准测试]
 
-A --> C[执行环境]
-C --> C1[GitHub Runner<br/>无硬件自动跳过]
-C --> C2[Lab Runner<br/>真实芯片测试]
+    A --> C[执行环境]
+    C --> C1[GitHub Runner<br/>无硬件自动跳过]
+    C --> C2[Lab Runner<br/>真实芯片测试]
 
-A --> D[测试产出]
-D --> D1[pytest 报告]
-D --> D2[HTML 可视化]
-D --> D3[CI 状态徽章]
+    A --> D[测试产出]
+    D --> D1[pytest 报告]
+    D --> D2[HTML 可视化]
+    D --> D3[CI 状态徽章]
 \`\`\`
 
 ---
@@ -40,18 +40,21 @@ D --> D3[CI 状态徽章]
 ## 🚀 快速开始
 
 ### 1️⃣ 克隆仓库
-\`\`\`bash
+\`\`\`
+bash
 git clone https://github.com/Lyon33/PCIe-NVMe-Automation-Framework.git
 cd PCIe-NVMe-Automation-Framework
 \`\`\`
 
 ### 2️⃣ 安装依赖
-\`\`\`bash
+\`\`\`
+bash
 pip install -r requirements.txt
 \`\`\`
 
 ### 3️⃣ 运行测试
-\`\`\`bash
+\`\`\`
+bash
 pytest tests/ -v
 \`\`\`
 
@@ -67,7 +70,8 @@ pytest tests/ -v
 
 ## 📂 目录结构
 
-\`\`\`text
+\`\`\`
+text
 .
 ├── .github/workflows/ci.yml   # GitHub Actions CI
 ├── scripts/                   # PCIe/NVMe 测试脚本
