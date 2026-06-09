@@ -1,0 +1,6 @@
+pytest
+pytest-html
+pandas
+matplotlib
+seaborn
+pyyaml
