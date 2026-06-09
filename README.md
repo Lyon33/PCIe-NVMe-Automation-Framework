@@ -18,7 +18,7 @@
 
 ## 🏗 架构设计
 
-\`\`\`mermaid
+```mermaid
 graph TD
     A[PCIe-NVMe 自动化测试框架] --> B[测试类型]
     B --> B1[PCIe 枚举与链路信息]
@@ -33,31 +33,28 @@ graph TD
     D --> D1[pytest 报告]
     D --> D2[HTML 可视化]
     D --> D3[CI 状态徽章]
-\`\`\`
+```
 
 ---
 
 ## 🚀 快速开始
 
 ### 1️⃣ 克隆仓库
-\`\`\`
-bash
+```bash
 git clone https://github.com/Lyon33/PCIe-NVMe-Automation-Framework.git
 cd PCIe-NVMe-Automation-Framework
-\`\`\`
+```
 
 ### 2️⃣ 安装依赖
-\`\`\`
-bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3️⃣ 运行测试
-\`\`\`
-bash
+```bash
 pytest tests/ -v
-\`\`\`
 
+```
 ---
 
 ## 🧠 设计亮点
@@ -70,8 +67,7 @@ pytest tests/ -v
 
 ## 📂 目录结构
 
-\`\`\`
-text
+```text
 .
 ├── .github/workflows/ci.yml   # GitHub Actions CI
 ├── scripts/                   # PCIe/NVMe 测试脚本
@@ -79,7 +75,7 @@ text
 ├── docs/                      # 架构与文档
 ├── conftest.py                # 全局硬件检测
 └── requirements.txt
-\`\`\`
+```
 
 ---
 
